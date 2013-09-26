@@ -38,6 +38,7 @@ declare class Hopscotch {
     nextStep(doCallbacks?: boolean): Hopscotch;
     endTour(clearState?: boolean, doCallbacks?: boolean): Hopscotch;
     getCurrTour(): TourObject;
+    getCurrTarget(): Element;
     getCurrStepNum(): number;
     listen(evtType: string, cb: Function, isTourCb: boolean): Hopscotch;
     unlisten(evtType: string, cb: Function): Hopscotch;
